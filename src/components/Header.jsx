@@ -1,5 +1,5 @@
 // components/Header.jsx
-import { useUser } from '../contexts/UserContext';
+import { useUser } from '../contexts/useUser';
 import { ThemeToggle } from './ThemeToggle';
 
 export function Header() {

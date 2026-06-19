@@ -1,6 +1,6 @@
 // components/Profile.jsx
-import { useUser } from '../contexts/UserContext';
-import { useTheme } from '../contexts/ThemeContext';
+import { useUser } from '../contexts/useUser';
+import { useTheme } from '../contexts/useTheme';
 
 export function Profile() {
   const { user, login } = useUser();
@@ -30,7 +30,7 @@ export function Profile() {
       <h3>User Profile</h3>
       <p>Name: {user.name}</p>
       <p>Email: {user.email}</p>
-      <p>Status: {user.loggedIn ? '✅ Logged In' : '❌ Logged Out'}</p>
+      <p>Status: {user.loggedIn ? 'Logged In' : 'Logged Out'}</p>
     </div>
   );
 }

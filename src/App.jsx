@@ -1,9 +1,9 @@
 // App.jsx
-import { ThemeProvider } from './contexts/ThemeContext';
-import { UserProvider } from './contexts/UserContext';
+import { ThemeProvider } from './contexts/ThemeProvider';
+import { UserProvider } from './contexts/UserProvider';
 import { Header } from './components/Header';
 import { Profile } from './components/Profile';
-import { useTheme } from './contexts/ThemeContext';
+import { useTheme } from './contexts/useTheme';
 
 // Component that uses context
 function MainContent() {
